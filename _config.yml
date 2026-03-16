@@ -1,10 +1,10 @@
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://davidsalamon.com" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
-title: "David Salamon"
-email: "david.salamon (AT) gmail.com"
+url: "https://signatureobjects.com" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
+title: "SIGNATURE OBJECTS"
+email: "studio@signatureobjects.com"
 phone: ""
 address: ""
-author: themefisher
+author: Signature Objects
 description: >- # this means to ignore newlines
   David Salamon designer services and design objects
 logo: "/assets/images/logo.png"
@@ -13,7 +13,7 @@ logo_icon: "/assets/images/logo-b.png"
 contact_form_action: "https://formspree.io/f/mbjvjykn" # works with https://fomrspree.io
 mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
 footer_content: "Lorem ipsum dolor amet consectetur adipielit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam."
-copyright: "David Salamon &copy; 2024 All Rights Reserved"
+copyright: "SIGNATURE OBJECTS &copy; 2026 All Rights Reserved"
 # page header default image
 cover_image: "/assets/images/bg/about-bg.jpg"
 google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9U5fMNGhdZOSpmM_QnZqs"
@@ -31,7 +31,7 @@ cta:
 social:
   - name: instagram
     icon: "ti-instagram"
-    link: "https://www.instagram.com/david_salamon_art/"
+    link: "https://www.instagram.com/signature_objects/"
 
 # Build settings
 permalink: "/:title"
