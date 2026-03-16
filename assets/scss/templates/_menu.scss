@@ -77,13 +77,13 @@
 
 .navbar-toggler span {
   @include desktop {
-    color: $white;
+    // color: $white;
   }
 }
 
 #main-nav.main-nav-black.nav-top .nav-logo {
   display: block;
-  color: $white;
+  // color: $white;
 }
 
 #main-nav.main-nav-black {
@@ -98,7 +98,7 @@
 .logo {
   font-size: 40px;
   font-weight: 700;
-  color: $white;
+  // color: $white;
 }
 
 @include mobile {
@@ -123,7 +123,7 @@
   }
 
   .navbar-toggler span {
-    color: $white;
+    // color: $white;
   }
 }
 
@@ -174,17 +174,17 @@
 }
 
 #main-nav.main-nav-black .navbar-toggler span {
-  color: $black;
+  color: $background-color;
   transition: color 0.3s ease;
 }
 
 #main-nav.main-nav-black.nav-top .navbar-toggler span {
-  color: $white !important;
+  // color: $white !important;
 }
 
 .main-nav.main-nav-black.hide-nav.nav-top .navbar-toggler {
   span {
-    color: $white;
+    // color: $white;
   }
 }
 
@@ -192,7 +192,7 @@
   @include desktop {
     .navbar-toggler {
       span {
-        color: $white;
+        // color: $white;
       }
     }
   }
@@ -200,7 +200,7 @@
 
 .main-nav.main-nav-black .nav-top .navbar-toggler {
   span {
-    color: $white;
+    // color: $white;
   }
 }
 
@@ -209,22 +209,22 @@
   @include desktop {
     .navbar-toggler {
       span {
-        color: $black;
+        color: $background-color;
       }
     }
   }
 }
 
 #main-nav.main-nav-black .navbar-brand {
-  color: $black;
+  color: $background-color;
 }
 
 #main-nav.main-nav-black .navbar-brand {
-  color: $black !important;
+  color: $background-color !important;
 }
 
 #main-nav.main-nav-black .navbar-nav .nav-link {
-  color: $black !important;
+  color: $background-color !important;
 }
 
 #main-nav.main-nav-black.nav-top .navbar-nav .nav-link {
@@ -234,7 +234,7 @@
 #main-nav.main-nav-black {
   @include desktop {
     .navbar-nav .nav-link {
-      color: $white !important;
+      // color: $white !important;
     }
   }
 }
