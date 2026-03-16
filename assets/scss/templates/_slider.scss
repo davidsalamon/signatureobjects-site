@@ -1,0 +1,148 @@
+body {
+  background-color: $secondary-color;
+}
+
+.main-content {
+  transform: translate(0);
+  transition: transform 0.3s ease-in-out;
+
+  &.menu-active {
+    transform: translate(-70%, 20vw);
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+.banner {
+  display: flex;
+  padding: 120px 0;
+
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 4px;
+    filter: drop-shadow(10px 10px 40px $black);
+  }
+  
+  &.banner-hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 101%;
+        min-height: 100%;
+    }
+    
+    span {
+      display: inline; /* Ensure spans behave as inline elements */
+      white-space: nowrap; /* Prevent text within each span from breaking */
+    }
+
+    .hero-heading {
+        font-family: $heading-font;
+        font-size: 60px;
+        line-height: 70px;
+        font-weight: 200;
+        color: $white;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-subheading {
+        font-family: $button-font;
+        font-size: 28px;
+        line-height: 40px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $white;
+        position: relative;
+        z-index: 1;
+    }
+
+    @media screen and (max-width: 576px) {
+        .hero-heading {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        .hero-subheading {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+  }
+  
+  &.banner-2 {
+    border-top: $primary-color solid 1px;
+    background-image: url('/assets/images/portfolio/wind/Wind_render_01a_small.jpg');
+    background-blend-mode: multiply;
+    background-color: rgba($primary-color, 0.60);
+    
+    .banner-content-2{
+      padding-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 60px;
+      line-height: 70px;
+      filter: drop-shadow(0px 0px 40px slategray);
+    }
+    
+    p {
+      color: rgba(255, 255, 255, .7);
+      padding-right: 55px;
+      font-size: 17px;
+    }
+
+  }
+
+  @media screen and (max-width: 1200px) {
+    // Medium screens
+  }
+
+  @media screen and (max-width: 992px) { // Smaller screens
+    padding: 110px 0;
+    
+    &.banner-2 h2 {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    // Tablets
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 100px 0;
+    
+    &.banner-2 h2 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+
+}
+
+.contact-form-wrap {
+  padding-top: 4rem;
+  //border-top: $primary-color solid 1px;
+}
+
+//TODO: works for #contact and 70px fixed header, may not work if layout changes
+section:last-of-type:not(:first-of-type) {
+	padding: 30px 0px 40px;
+  scroll-margin-top: 100px;
+}

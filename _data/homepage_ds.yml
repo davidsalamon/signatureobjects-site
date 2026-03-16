@@ -1,0 +1,91 @@
+######################### Hero Area ##############################
+hero_area_project:
+  subtitle: ""
+  title : "Lights that amaze, delight and inspire"
+  content : ""
+  image : "/assets/images/empty.png"
+  button:
+    enable : true
+    label : "Works"
+    link : "/works"
+
+hero_area:
+  background_image : "/assets/images/portfolio/wind/Wind_render_02.png"
+  subtitle: ""
+  title : "Wind Light: a unique, 3d-printed collectible design"
+  content : ""
+  image : "/assets/images/portfolio/wind/01.jpg"
+  button:
+    enable : true
+    label : "See Wind Light"
+    link : "/works#wind-light"
+
+hero_area_about:
+  background_image : "/assets/images/empty.png"
+  subtitle: ""
+  title : "An interdisciplinary <br> Designer <br>from Budapest."
+  content : "In his design practice, David creates collectible design objects, interactive museum exhibits and kinetic installations. As a versatile designer with a background in both art and engineering, he defines design as poetry meeting technology."
+  image : "/assets/images/banner/banner-davidsalamon.png"
+  button:
+    enable : false
+    label : "About"
+    link : "/about"
+
+########################### Service ##############################
+services:
+- title : "Brand Design"
+  icon : "ti-ruler-pencil"
+  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+
+- title : "Seo & Marketing"
+  icon : "ti-announcement"
+  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+
+- title : "Creative Design"
+  icon : "ti-palette"
+  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+
+
+########################### Testimonial ###########################
+testimonial:
+  enable : true
+  title : "clients feedback"
+  subtitle : "testimonials"
+  bg_image : "/assets/images/bg/testimonial-bg.png"
+  item:
+  - name : "Liam Hughes"
+    designation : "Manager"
+    image : "/assets/images/team/test-1.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
+    
+  - name : "Jane Austin"
+    designation : "Designer"
+    image : "/assets/images/team/test-2.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
+    
+  - name : "Liolane hussy"
+    designation : "Developer"
+    image : "/assets/images/team/test-3.jpg"
+    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
+
+
+######################## Fun facts ########################
+funfacts:
+  enable : true
+  bg_image : "/assets/images/bg/cta-bg.png"
+  item:
+  - name : "work completed"
+    icon : "ti-briefcase"
+    value : "370"
+    
+  - name : "new projects"
+    icon : "ti-paint-bucket"
+    value : "450"
+    
+  - name : "Happy customers"
+    icon : "ti-heart"
+    value : "5000"
+    
+  - name : "awards win"
+    icon : "ti-cup"
+    value : "37"

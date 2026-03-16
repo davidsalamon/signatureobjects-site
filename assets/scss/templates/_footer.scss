@@ -1,0 +1,31 @@
+.footer-btm{
+	.border-top{
+		border-top: 1px solid rgba(255, 255, 255, 0.2)!important;
+	}
+
+	span,p{
+		color: rgba(255,255,255,.7);
+	}
+	a{
+		color: rgba(255,255,255,.7);
+	}
+	
+	.insta {
+		padding: 8px 12px;
+		border: 1px solid gray;
+		border-radius: 5px;
+		font-family: $button-font;
+		
+		&:hover {
+			background-color: $white;
+			&span {
+				color: $black
+			}
+		}
+	}
+	
+	.footer-logo {
+		max-width: 50px;
+		filter: grayscale(1.0);
+	}
+}

@@ -1,0 +1,28 @@
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="{%if page.description%}{{page.description}}{%else%}{{site.description}}{%endif%}">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="dizer-jekyll" />
+    
+  {% if site.author %}
+  <meta name="author" content="{{ . }}">
+  {% endif %}
+
+  {% for css in site.data.plugins.css %}
+  <link rel="stylesheet" href="{{ css | relative_url }}">
+  {% endfor %}
+
+  <!-- Main Stylesheet -->
+  <link href="{{ '/assets/scss/style.css' | relative_url }}" rel="stylesheet">
+
+  <!-- Favicon: use https://realfavicongenerator.net/ -->
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png" />
+  <!--  <link rel="manifest" href="/assets/images/favicon/site.webmanifest" /> -->
+</head>

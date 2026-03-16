@@ -1,0 +1,42 @@
+#works-page {
+    
+    padding: 120px 0px 20px 0px;
+
+    .row {    
+        @include card;
+        
+        &.card-even, &.card-odd {
+            align-items: stretch !important;
+        }
+
+        &:not(.card-even):not(.card-odd) {
+            // IE. included row from template
+            padding: 2rem;
+        }
+    }
+    
+    .col-lg-4 {
+        padding-right: 0;
+        padding-left: 0;
+        display: flex;
+    }
+    
+    .card-odd{
+        img{
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+    } 
+    
+    .card-even{
+        img{
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+    } 
+    
+    .edition-info {
+        font-family: $button-font;
+    }
+    
+}

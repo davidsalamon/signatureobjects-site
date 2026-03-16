@@ -1,0 +1,240 @@
+//navbar navbar-expand-lg main-nav main-nav-black nav-top
+
+#main-nav {
+  height: 100px;
+
+  .navbar-nav .nav-link {
+    
+    font-size: 20px;
+    font-family: $button-font;
+    font-weight: 300;
+    color: $white;
+    text-transform: uppercase;
+    
+    margin-left: 25px;
+
+  }
+
+}
+
+.collapsing {
+  height: auto !important;
+  transition: none !important;
+}
+
+@media screen and (max-width: 991px) {
+  #main-nav {
+    .navbar-nav .nav-link {
+      font-size: 28px;
+      display: inline-block;
+      margin-right: 30px;
+      margin-bottom: 1.25rem;
+      padding-bottom: 4px;
+
+      background-image: linear-gradient($white 0 0);
+      background-position: 0 100%; /*OR bottom left*/
+      background-size: 0% 1px;
+      background-repeat: no-repeat;
+      
+      transition:
+        background-size 0.3s,
+        background-position 0s 0.3s; /*change after the size immediately*/
+      
+      &:hover {
+        background-position: 100% 100%; /*OR bottom right*/
+        background-size: 100% 1px;
+      }
+    }
+
+    .navbar-collapse {
+      position: absolute;
+      top: 120px;
+      right: 0px;
+    }
+    
+    &.menu-active {
+      .nav-logo {
+        color: $white!important;
+      }
+    }
+
+  }
+}
+
+.navbar-brand {
+  font-size: 40px;
+  color: $white;
+  font-weight: 300;
+  font-family: $heading-font;
+}
+
+.nav-top {
+  background: $secondary-color;
+  transition: .0s all ease;
+  z-index: 99999;
+}
+
+
+.navbar-toggler span {
+  @include desktop {
+    color: $white;
+  }
+}
+
+#main-nav.main-nav-black.nav-top .nav-logo {
+  display: block;
+  color: $white;
+}
+
+#main-nav.main-nav-black {
+  @include desktop {
+    .nav-logo {
+      display: block;
+    }
+  }
+}
+
+
+.logo {
+  font-size: 40px;
+  font-weight: 700;
+  color: $white;
+}
+
+@include mobile {
+  .navbar-collapse {
+    text-align: center;
+    padding: 20px;
+  }
+
+  #main-nav .navbar-nav .nav-link {
+    padding: 0px;
+  }
+}
+
+@include mobile-xs {
+  .navbar-collapse {
+    text-align: center;
+    padding: 20px;
+  }
+
+  #main-nav .navbar-nav .nav-link {
+    padding: 0px;
+  }
+
+  .navbar-toggler span {
+    color: $white;
+  }
+}
+
+@include tablet {
+  .navbar-collapse {
+    //position: absolute;
+    //right: 0px;
+    //top: 100px;
+    //width: 240px;
+    //height: 100vh;
+    
+    text-align: center;
+    padding: 20px;
+  }
+
+  #main-nav .navbar-nav .nav-link {
+    padding: 0px;
+  }
+
+  .navbar-toggler span {
+    color: $white;
+  }
+}
+
+.menu-left {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  box-sizing: border-box;
+  padding: 55px;
+
+}
+
+.main-content-right {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  box-sizing: border-box;
+
+}
+
+.collapse:not(.show) {
+  @include desktop {
+    display: none !important;
+  }
+}
+
+#main-nav.main-nav-black .navbar-toggler span {
+  color: $black;
+  transition: color 0.3s ease;
+}
+
+#main-nav.main-nav-black.nav-top .navbar-toggler span {
+  color: $white !important;
+}
+
+.main-nav.main-nav-black.hide-nav.nav-top .navbar-toggler {
+  span {
+    color: $white;
+  }
+}
+
+.main-nav.main-nav-black.hide-nav {
+  @include desktop {
+    .navbar-toggler {
+      span {
+        color: $white;
+      }
+    }
+  }
+}
+
+.main-nav.main-nav-black .nav-top .navbar-toggler {
+  span {
+    color: $white;
+  }
+}
+
+.main-nav.main-nav-black {
+
+  @include desktop {
+    .navbar-toggler {
+      span {
+        color: $black;
+      }
+    }
+  }
+}
+
+#main-nav.main-nav-black .navbar-brand {
+  color: $black;
+}
+
+#main-nav.main-nav-black .navbar-brand {
+  color: $black !important;
+}
+
+#main-nav.main-nav-black .navbar-nav .nav-link {
+  color: $black !important;
+}
+
+#main-nav.main-nav-black.nav-top .navbar-nav .nav-link {
+  color: $white !important;
+}
+
+#main-nav.main-nav-black {
+  @include desktop {
+    .navbar-nav .nav-link {
+      color: $white !important;
+    }
+  }
+}
