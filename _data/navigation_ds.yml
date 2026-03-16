@@ -1,7 +1,7 @@
 #Please use the main menu items under the "name"
 main:
 
-  - name: Works
+  - name: Collection
     url: "/works"
 
   - name: About
