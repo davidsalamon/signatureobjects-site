@@ -4,8 +4,8 @@ main:
   - name: Collection
     url: "/works"
 
-  - name: About
-    url: "/about"
+  # - name: About
+  #   url: "/about"
       
   - name: Contact
     url: "#contact"
