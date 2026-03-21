@@ -7,6 +7,9 @@ main:
   # - name: About
   #   url: "/about"
       
+  - name: Designers
+    url: "#designers"
+
   - name: Contact
     url: "#contact"
 
