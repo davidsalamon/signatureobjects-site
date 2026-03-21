@@ -1,0 +1,39 @@
+// Global Card System
+// Used across the site for card-based layouts (works, designers, etc.)
+
+.row {
+    &.card-even, &.card-odd {
+        @include card;
+        align-items: stretch !important;
+    }
+}
+
+.row.card-even,
+.row.card-odd {
+    .col-lg-4 {
+        padding-right: 0;
+        padding-left: 0;
+        display: flex;
+        
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.row.card-odd {
+    img {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+}
+
+.row.card-even {
+    img {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+}
