@@ -5,19 +5,14 @@ layout: default_2
 <div class="main-content">
     {% include hero_area_project.html %}
 
-    <section class="section about overflow-hidden">
+    <section class="section about overflow-hidden" id="section-wind">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
-                    <div class="about-img">
-                        <img src="{{about.video_thumb| relative_url}}" alt="" class="img-fluid w-100">
-                        <div class="video-play">
-                            <div class="play-bg">
-                                <a class="popup-youtube" href="{{about.video_url}}"><i class="ti-control-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                
+                <div class="col-lg-6 col-md-5 align-self-end">
+                    <img src="{{ banner.image | relative_url }}" alt="" class="img-fluid position-absolute-">
                 </div>
+
                 <div class="col-lg-6 col-md-7 offset-lg-1 mt-5 mt-md-0">
                     <span class="text-color h5 text-uppercase">{{about.subtitle}}</span>
                     <h3 class="mb-4 mt-3">SIGNATURE OBJECTS is a curatorial atelier for collectible light objects.</h3>
