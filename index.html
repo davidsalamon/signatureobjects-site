@@ -4,33 +4,17 @@ layout: default_2
 
 <div class="main-content">
     {% include hero_area_project.html %}
-
-    <section class="section about overflow-hidden" id="section-wind">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-lg-6 col-md-5 align-self-end">
-                    <img src="{{ "/assets/images/collection/david_salamon/wind/david_salamon_wind_01.jpg" | relative_url }}" alt="" class="img-fluid position-absolute-">
-                </div>
-
-                <div class="col-lg-6 col-md-7 offset-lg-1 mt-5 mt-md-0">
-                    <span class="text-color h5 text-uppercase">{{about.subtitle}}</span>
-                    <h3 class="mb-4 mt-3">SIGNATURE OBJECTS is a curatorial atelier for collectible light objects.</h3>
-                    <p>
-                        SIGNATURE OBJECTS brings together a carefully selected group of designers whose work operates at the intersection of art, design, and architecture—where light becomes both medium and message. Each piece is produced in limited editions or as one-of-a-kind works, conceived not as products, but as objects of lasting presence and meaning.
-                    </p>
-                    <p>
-                        The collection is defined by a commitment to craftsmanship, material sensitivity, and technical integrity. From blown glass to digitally fabricated forms, every object reflects a dialogue between concept and making—often developed in close collaboration with skilled artisans. Rather than following trends, SIGNATURE OBJECTS focuses on works that carry narrative depth and emotional resonance.
-                    </p>
-                    <p>
-                        Function remains essential, but never sufficient on its own. These are objects to live with—pieces of functional luxury that illuminate spaces while shaping atmosphere, perception, and experience. SIGNATURE OBJECTS offers an alternative to the uniformity of contemporary interiors: a curated collection of light objects that invite attention, reward discovery, and endure over time.
-                    </p>
-                    <a href="{{ about.button.link | relative_url }}" class="btn btn-primary">Explore Collection</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
+    <h3 class="text-center mt-5 mb-3 pt-3">The Curatorial Atelier For Collectible Light Objects</h3>
+    <div class="container text-center mb-5 py-2">
+        <p> 
+            SIGNATURE OBJECTS brings together a curated group of designers working at the intersection of art, design, and architecture. Each piece is produced in limited editions or as one-of-a-kind works, conceived as objects of lasting presence and meaning.
+        </p>
+        <p>
+            Defined by craftsmanship, material sensitivity, and technical integrity, the collection focuses on functional luxury: light objects that shape atmosphere, carry narrative depth, and offer an alternative to the uniformity of contemporary interiors.
+        </p>
+    </div>  
+    
     <h3 class="text-center mt-5 mb-3 pt-3">Recognition Across The Collection</h4>
     <div class="container mb-5 py-2">
         {% include as_seen_in.html %}
