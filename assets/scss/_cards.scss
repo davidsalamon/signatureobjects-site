@@ -37,3 +37,16 @@
         border-bottom-left-radius: 6px;
     }
 }
+
+.designer-tile {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* perfect square, change if needed */
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;   /* THIS is the magic */
+        object-position: center; /* adjust per image if needed */
+    }
+}
