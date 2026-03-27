@@ -8,7 +8,7 @@ main:
   #   url: "/about"
       
   - name: Designers
-    url: "#designers"
+    url: "/designers"
 
   - name: Contact
     url: "#contact"
